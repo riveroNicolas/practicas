@@ -2,52 +2,164 @@
     box-sizing: border-box;
 }
 
-.titulo-principal{
-    padding-left: 30px;
+header{
+    background-color: #bbbbbb;
+    padding-top: 20px;
 }
 
-#banner{
-    width: 100%;
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
 }
 
-p{
-    text-align: center;
-}
-
-em strong{
-    color: red;
-}
-
-#mision{
-    font-size: 20px;
-}
-
-.principal{
-    background-color: #cccccc;
-    padding: 20px;
-}
-
-.diferenciales{
-    background-color: #ffffff;    
-    padding: 30px;
-}
-
-.titulo-centralizado{
-    text-align: center;
-}
-
-.items{
-    font-style: italic;
+/* importante para colocar elementos sobre imagenes o fondo. Relative(el contenedor) es para mover o ajustar tamaño en base a la posicion predeterminada(static), absolute(el elemento) es para moverlo en toda la pantalla desde el punto 0 0 */
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
 }
 
 ul{
-    display: inline-block;
-    vertical-align: top ;
-    width: 20%;
-    margin-right: 20%;
+    list-style: none;
 }
 
-.imagen-diferenciales{
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+.productos{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.productos li{
+    display: inline-block;
+    border:solid 2px black;
+    border-top-width: 6px;
+    border-left-width: 4px;
+    border-radius: 15px;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 10px 1.5%;
+}
+
+.productos li:hover{
+    border-color: #c78c19;
+}
+
+.productos li:active{
+    border-color: #088c19;
+}
+
+.productos li:hover h2{
+    font-size: 35px;
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.descripcion{
+    font-size: 16px;
+}
+
+.precio{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer{
+    text-align: center;
+    background: url(img/bg.jpg);
+    padding: 40px;
+}
+
+.copyright{
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px;
+}
+
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+form{
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
     width: 50%;
 }
 
+.checkbox{
+    margin: 20px 0;
+}
+
+.fieldset-sin-borde{
+    border: none;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #c78c19;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    transition: 1s background;
+    transition: 1.5s transform;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background-color: darkorange;
+    transform: scale(1.20) rotate(360deg);
+}
+
+table{
+    margin: 40px;
+}
+
+thead{
+    color: white;
+    background-color: #555555 ;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 8px 15px;
+}
